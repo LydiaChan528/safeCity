@@ -1,48 +1,89 @@
-/*@import url(https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,600i,700,700i,900,900i);*/
-
 #my-paragraph {
     color: red;
 }
 
-/* .header {
-color: blue;
-} */
-
-.row {
+#top {
+	background-color: white;
 	float: right;
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+
+	border-bottom: 0px;
+	/*border-bottom: 5px solid #3E6C7A;*/
+	position: fixed;
+	height: 125px;
+	width: 100%;
+}
+
+#header{
+    background-image: url("logoLong.png");
+    background-size: 100% 175%;
+    moz-transition: all 1s ease-in-out;
+    o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    webkit-transition: all 1s ease-in-out;
+}
+
+#header.active{
+    background: rgba(255,255,255,0.9);
+} 
+
+img.logo {
+	position: fixed;
+	top: 10px;
+	left: 36%;
+
+	opacity: 0;
 }
 
 .headings {
 	letter-spacing: 2px;
 	color: #3E6C7A;
 	font-size: 20px;
+	position: fixed;
+	top: 50px;
+}
+
+.top0 {
+	right: 370px;
+}
+
+.top1 {
+	right: 220px;
+}
+
+.top2 {
+	right: 140px;
+}
+
+.top3 {
+	right: 35px;
 }
 
 .text{
-  font-family: 'Quicksand', sans-serif;
-
+	font-family: 'Raleway', sans-serif;
+	color: #3E6C7A;
 }
 
 .text2{
-  font-family: 'Inconsolata', monospace;
+	font-family: 'Inconsolata', sans-serif;
+	color: #3E6C7A;
+	font-size: 50px;
+	margin-left: 50px;
 }
 
 body {
-	background-image: url("bg.jpg");
-	background-size: 100% 175%;
-	background-repeat: no-repeat;
 	/*font-family: 'Open Sans Light', Arial, sans-serif;*/
 	font-family: "Muli", Arial, Verdana, sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	font-color: #3E6C7A;
 }
 
 html, body {
-
+	color: #3E6C7A;
 }
 
 @font-face {
@@ -58,8 +99,105 @@ url("css/fonts/OpenSans-Light.tff") format("ttf");
   font-weight: lighter;
 }
 
+.top {
+	position: bottom;
+}
+
 .container {
 	position: bottom;
+	width: 200%;
+}
+
+#intro {
+	background-image: url("realTopBg.jpeg");
+	background-size: 100% 115%;
+/*	border: solid #3E6C7A;
+	border-width: 5px;*/
+}
+
+#settings {
+	background-color: white;
+	width: 200%;
+}
+
+.gender {
+	margin-left: 50px;
+	font-size: 25px;
+}
+
+.nav {
+	margin-left: 50px;
+}
+
+#map {
+	background-image: url("bg.jpg");
+	background-size: 100% 175%;
+	background-repeat: no-repeat;
+}
+
+label {
+	color:white;
+}
+/*
+col-sm-4 {
+	float: left;
+	margin-left: 100px;
+	margin-right: auto;
+	width: 33%;
+	background-color: transparent;
+}*/
+
+#col8 {
+	/*position: absolute;*/
+	/*display: block;*/
+	float: right;
+	margin-left: 100px;
+	margin-right: 0;
+	width: 100%;
+	background-color: transparent;
+}
+
+#fakemap {
+	height: 425px;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #3E6C7A;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: center;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 25px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+p.motto {
+	text-align: center;
+	font-style: italic;
+	letter-spacing: 1px;
+	color: #3E6C7A;
+	font-size: 20px;
 }
 
 .col-sm-4 {
@@ -68,6 +206,9 @@ url("css/fonts/OpenSans-Light.tff") format("ttf");
 
 img {
   width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li {
@@ -75,25 +216,111 @@ li {
 	color: white;
 }
 
-i {
-	letter-spacing: 1px;
-	color: white;	
-	font-size: 18px;
+#about {
+	
 }
 
-iframe {}
-
-/*li {
+p.aboutText {
+	text-align: left;
+	margin-right: 150px;
+    margin-left: 80px;
+	color: #3E6C7A;
+	font-size: 18px;
 	letter-spacing: 1px;
-	color: white;
+}
+
+/*button {
+   changed from padding to margin 
+  color:white;
+  margin: 10px;
 }*/
 
-* {
-  /*border: 1px solid aquamarine;*/
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-button {
-  /* padding: 10px; */
-  /* changed from padding to margin */
-  margin: 10px;
-}
+
+
+
+
+
+
+
+
+#description {
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	}
+
+	#infowindow-content .title {
+	font-weight: bold;
+	}
+
+	#infowindow-content {
+	display: none;
+	}
+
+	#map #infowindow-content {
+	display: inline;
+	}
+
+	.pac-card {
+	margin: 10px 10px 0 0;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+	font-family: Roboto;
+	}
+
+	#pac-container {
+	padding-bottom: 12px;
+	margin-right: 12px;
+	}
+
+	.pac-controls {
+	display: inline-block;
+	padding: 5px 11px;
+	}
+
+	.pac-controls label {
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+	}
+
+	#pac-input {
+	background-color: #fff;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	margin-left: 12px;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 400px;
+	}
+
+	#pac-input:focus {
+	border-color: #4d90fe;
+	}
+/*
+	#title {
+	color: #fff;
+	background-color: #4d90fe;
+	font-size: 25px;
+	font-weight: 500;
+	padding: 6px 12px;
+	}*/
+	#target {
+	width: 345px;
+	}
